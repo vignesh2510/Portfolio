@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.aa{
+    padding-left: 520px;
+}
+.nav-item{
+   margin-left: 80px;
+}
+.navbar-header{
+    font-size: 30px
+}
+.one{
+    background-image: url(/image/360_F_290828816_pbLVbblZaoCMVSeDxtayjDZNfrMAlvrQ.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+.one h5{
+  color: #18d26e;
+}
+.th h1{
+  color: #18d26e;
+}
+.thh span{
+  color: #18d26e;
+}
+.sk h4{
+  color: #18d26e;
+}
+.container{
+    background: rgba(0, 0, 0, 0.9); 
+}
+.fadeIn  img{
+    height: 400px;
+    border-radius: 10px;
+}
+.active.thh{
+    position: relative;
+    animation: mymove 1s;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+    from {top:-1000px;}
+    to {top: 0;}
+}
+.th h1 {
+  width: 22ch;
+  animation: typing 3s steps(20) infinite, blink .4s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.active.progress-bar{
+    position: relative;
+    animation: smove 3s;
+    animation-timing-function: linear;
+}
+@keyframes smove {
+    from {width: 0;}
+    to {bottom: 70;}
+}
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+  }
+  80% {
+    -webkit-transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+.reveal{                                                       
+  position: relative;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+}
+#spin:after {
+  content:"";
+  animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  0% { content:"I'M VIGNESHWARAN";}
+  100% { content: "FRONT END DEVELOPER"; }
+}
+@media screen and (max-width: 768px) {
+    .fadeIn img{
+       width: 230px;
+       height: 350px;
+    }
+    .aa{
+        padding-left: 180px;
+    }
+    .nav-item{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .th p{
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .aa{
+        padding-left: 0px;
+    }
+    .nav-item{
+        margin-left: 0px;
+    }
+    .fadeIn img{
+      padding-left: 50px;
+      width: 350px;
+    }
+}
+@media screen and (max-width: 375px){
+  .fadeIn img{
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width: 320px){
+    .fadeIn img{
+      width: 250px;
+      padding-left: 5px;  
+    }
+}
+

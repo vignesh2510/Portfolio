@@ -1,0 +1,134 @@
+#myVideo {
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.xn{
+  position: fixed;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.on{
+  margin-left: 40px; 
+}
+@keyframes mymovee {
+  from {top: -1000px;}
+  to {top: 0px;}
+}
+.on h1{
+  margin-top: 240px;
+  color: #18d26e;
+  position: relative;
+  animation: mymove 3s;
+  animation-timing-function: linear;
+}
+.on p{
+  color: #edf7f1;
+  position: relative;
+  animation: mymoves 3s;
+  animation-timing-function: linear;
+}
+@keyframes mymoves {
+  from {left: -1000px;}
+  to {left: 0px;}
+}
+.h{
+  position: relative;
+  animation: mymovee 3s;
+  animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {bottom: -1000px;}
+  to {bottom: 0px;}
+}
+
+.fa {
+    padding: 8px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;  
+    margin: 8px;
+  }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #2b2b2b;
+    color: white;
+  }
+  .fa-twitter {
+    background: #2b2b2b;
+    color: white;
+  }
+  .fa-google {
+    background: #2b2b2b;
+    color: white;
+  }
+  .fa-instagram{
+    background: #2b2b2b;
+    color: white; 
+  }
+  
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #18d26e;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+@media screen and (max-width: 768px) {
+ 
+ .on h1{
+  margin-top: 100px;
+ }
+}
+@media (min-width: 320px) and (max-width: 564px){
+   .on{
+    margin-left: 10px;
+   }
+}
